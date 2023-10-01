@@ -26,6 +26,8 @@
 \Round(5)={Round 5}
 \Round(6)={Round 6}
 \Round(7)={Round 7}
+\Round(8)={Round 8}
+\Round(9)={Round 9}
 
 \newarray\Seed
 \Seed(01)={Team Seeded 1\textsuperscript{st}}
@@ -43,25 +45,25 @@
 \Seed(13)={Team Seeded 13\textsuperscript{th}}
 \Seed(14)={Team Seeded 14\textsuperscript{th}}
 \Seed(15)={Team Seeded 15\textsuperscript{th}}
-\Seed(16)={Team Seeded 16\textsuperscript{th}}
+\Seed(16)={Bye}
 
 \setbool{ShowPoolNames}{true}
 \newarray\PoolName
-\PoolName(1)={Alpha}
-\PoolName(2)={Beta}
+\PoolName(1)={Group A}
+\PoolName(2)={Group B}
 
 \newarray\PoolARoom
-\PoolARoom(1)={Room A} % Average difference between seeds: 6.1
-\PoolARoom(2)={Room B} % Average difference between seeds: 4.6
-\PoolARoom(3)={Room C} % Average difference between seeds: 7.9
-\PoolARoom(4)={Room D} % Average difference between seeds: 6.0
+\PoolARoom(1)={Room 6} % Average difference between seeds: 6.1
+\PoolARoom(2)={Room 7} % Average difference between seeds: 4.6
+\PoolARoom(3)={Room 8} % Average difference between seeds: 7.9
+\PoolARoom(4)={Bye} % Average difference between seeds: 6.0
 \newarray\PoolBRoom
-\PoolBRoom(1)={Room E} % Average difference between seeds: 5.9
-\PoolBRoom(2)={Room F} % Average difference between seeds: 4.6
-\PoolBRoom(3)={Room G} % Average difference between seeds: 7.6
-\PoolBRoom(4)={Room H} % Average difference between seeds: 5.4
+\PoolBRoom(1)={Room 9} % Average difference between seeds: 5.9
+\PoolBRoom(2)={Room 10} % Average difference between seeds: 4.6
+\PoolBRoom(3)={Room 11} % Average difference between seeds: 7.6
+\PoolBRoom(4)={Room 12} % Average difference between seeds: 5.4
 
-\setbool{ShowReaders}{true}
+\setbool{ShowReaders}{false}
 \newarray\PoolAReader
 \PoolAReader(1)={Al Anderson}
 \PoolAReader(2)={Betsy Baxter}
@@ -73,7 +75,7 @@
 \PoolBReader(3)={Gail Griffin}
 \PoolBReader(4)={Harold Horwich}
 
-\setbool{ShowScorekeepers}{true}
+\setbool{ShowScorekeepers}{false}
 \newarray\PoolAScorekeeper
 \PoolAScorekeeper(1)={Ann Allen}
 \PoolAScorekeeper(2)={Bill Berger}
@@ -85,7 +87,7 @@
 \PoolBScorekeeper(3)={Gary Gomez}
 \PoolBScorekeeper(4)={Haley Holmes}
 
-\setbool{ShowBuzzerAssignments}{true}
+\setbool{ShowBuzzerAssignments}{false}
 \newarray\PoolABuzzer
 \PoolABuzzer(1)={\Seed(01)}
 \PoolABuzzer(2)={\Seed(02)}
@@ -128,6 +130,8 @@
 	\round{\Round(5)}		&	\matchup{\Seed(09)}{\Seed(04)}	&	\matchup{\Seed(16)}{\Seed(12)}	&	\matchup{\Seed(13)}{\Seed(01)}			&	\matchup{\Seed(05)}{\Seed(08)}	\tabularnewline
 	\round{\Round(6)}		&	\matchup{\Seed(04)}{\Seed(08)}	&	\matchup{\Seed(05)}{\Seed(01)}	&	\matchup{\Seed(09)}{\Seed(16)}			&	\matchup{\Seed(12)}{\Seed(13)}	\tabularnewline
 	\round{\Round(7)}		&	\matchup{\Seed(01)}{\Seed(12)}	&	\matchup{\Seed(13)}{\Seed(09)}	&	\matchup{\Seed(16)}{\Seed(08)}			&	\matchup{\Seed(04)}{\Seed(05)}	\tabularnewline
+	\round{\Round(8)}		&	\matchup{\Seed(01)}{\Seed(12)}	&	\matchup{\Seed(13)}{\Seed(09)}	&	\matchup{\Seed(16)}{\Seed(08)}			&	\matchup{\Seed(04)}{\Seed(05)}	\tabularnewline
+	\round{\Round(9)}		&	\matchup{\Seed(01)}{\Seed(12)}	&	\matchup{\Seed(13)}{\Seed(09)}	&	\matchup{\Seed(16)}{\Seed(08)}			&	\matchup{\Seed(04)}{\Seed(05)}	\tabularnewline
 	\hline
 	\end{tabular}
 	
@@ -156,6 +160,8 @@
 	\round{\Round(5)}		&	\matchup{\Seed(10)}{\Seed(03)}	&	\matchup{\Seed(15)}{\Seed(11)}	&	\matchup{\Seed(14)}{\Seed(02)}			&	\matchup{\Seed(06)}{\Seed(07)}	\tabularnewline
 	\round{\Round(6)}		&	\matchup{\Seed(03)}{\Seed(07)}	&	\matchup{\Seed(06)}{\Seed(02)}	&	\matchup{\Seed(10)}{\Seed(15)}			&	\matchup{\Seed(11)}{\Seed(14)}	\tabularnewline
 	\round{\Round(7)}		&	\matchup{\Seed(02)}{\Seed(11)}	&	\matchup{\Seed(14)}{\Seed(10)}	&	\matchup{\Seed(15)}{\Seed(07)}			&	\matchup{\Seed(03)}{\Seed(06)}	\tabularnewline
+	\round{\Round(8)}		&	\matchup{\Seed(01)}{\Seed(12)}	&	\matchup{\Seed(13)}{\Seed(09)}	&	\matchup{\Seed(16)}{\Seed(08)}			&	\matchup{\Seed(04)}{\Seed(05)}	\tabularnewline
+	\round{\Round(9)}		&	\matchup{\Seed(01)}{\Seed(12)}	&	\matchup{\Seed(13)}{\Seed(09)}	&	\matchup{\Seed(16)}{\Seed(08)}			&	\matchup{\Seed(04)}{\Seed(05)}	\tabularnewline
 	\hline
 	\end{tabular}
 \end{center}
