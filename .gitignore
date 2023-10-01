@@ -2,4 +2,8 @@
 out
 .fleet/
 sample/
-
+.DS_Store
+*.aux
+*.fdb_latexmk
+*.log
+*.pdf
