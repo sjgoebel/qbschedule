@@ -84,7 +84,7 @@
 \PoolDRoom(2)={Room K} % Average difference between seeds: 8.1
 \PoolDRoom(3)={Room L} % Average difference between seeds: 13.4
 
-\setbool{ShowReaders}{true}
+\setbool{ShowReaders}{false}
 \newarray\PoolAReader
 \PoolAReader(1)={Al Anderson}
 \PoolAReader(2)={Betsy Baxter}
@@ -103,7 +103,7 @@
 \PoolDReader(2)={Karl Kohl}
 \PoolDReader(3)={Laura Lang}
 
-\setbool{ShowScorekeepers}{true}
+\setbool{ShowScorekeepers}{false}
 \newarray\PoolAScorekeeper
 \PoolAScorekeeper(1)={Ann Allen}
 \PoolAScorekeeper(2)={Bill Berger}
@@ -122,7 +122,7 @@
 \PoolDScorekeeper(2)={Kaitlyn Keefe}
 \PoolDScorekeeper(3)={Larry Layton}
 
-\setbool{ShowBuzzerAssignments}{true}
+\setbool{ShowBuzzerAssignments}{false}
 \newarray\PoolABuzzer
 \PoolABuzzer(1)={\Seed(01)}
 \PoolABuzzer(2)={\Seed(02)}
@@ -161,28 +161,28 @@
         \begin{tabular}{|y{\LeftColumnWidth}x{\RoomColumnWidth}x{\RoomColumnWidth}x{\RoomColumnWidth}|x{\ByeColumnWidth}|x{\RoomColumnWidth}x{\RoomColumnWidth}x{\RoomColumnWidth}|}
             \hline
             \ifbool{ShowPoolNames}{
-                \emptyinvertedcell		&	\pool{4}{\PoolName(1)} \bigstrut																							&	\pool{4}{\PoolName(2)}																						\bigstrut \tabularnewline
+                \emptyinvertedcell		&	\pool{3}{\PoolName(1)} \bigstrut					& \pool{1} \bigstrut																		&	\pool{3}{\PoolName(2)}																						\bigstrut \tabularnewline
             }{}
-            \room{Room}				&	\room{\PoolARoom(1)}			&	\room{\PoolARoom(2)}			&	\room{\PoolARoom(3)}				&	\room{\PoolCRoom(1)}				&	\room{\PoolBRoom(1)}			&	\room{\PoolBRoom(2)}			&	\room{\PoolBRoom(3)} & \room{\PoolBRoom(4)}				\tabularnewline
+            \room{Room}				&	\room{\PoolARoom(1)}			&	\room{\PoolARoom(2)}			&	\room{\PoolARoom(3)}				&	\room{\PoolCRoom(1)}				&	\room{\PoolBRoom(1)}			&	\room{\PoolBRoom(2)}			&	\room{\PoolBRoom(3)} 			\tabularnewline
             \ifbool{ShowReaders}{
-                \staff{Reader}			&	\staff{\PoolAReader(1)}			&	\staff{\PoolAReader(2)}			&	\staff{\PoolAReader(3)}		&	\emptyinvertedcell				&	\staff{\PoolBReader(1)}			&	\staff{\PoolBReader(2)}			&	\staff{\PoolBReader(3)}	&\staff{\PoolBReader(4)}	\tabularnewline
+                \staff{Reader}			&	\staff{\PoolAReader(1)}			&	\staff{\PoolAReader(2)}			&	\staff{\PoolAReader(3)}		&	\emptyinvertedcell				&	\staff{\PoolBReader(1)}			&	\staff{\PoolBReader(2)}			&	\staff{\PoolBReader(3)}		\tabularnewline
             }{}
             \ifbool{ShowScorekeepers}{
-                \staff{Scorekeeper}		&	\staff{\PoolAScorekeeper(1)}	&	\staff{\PoolAScorekeeper(2)}	&	\staff{\PoolAScorekeeper(3)}	&	\emptyinvertedcell				&	\staff{\PoolBScorekeeper(1)}	&	\staff{\PoolBScorekeeper(2)}	&	\staff{\PoolBScorekeeper(3)} &\staff{\PoolBScorekeeper(4)}	\tabularnewline
+                \staff{Scorekeeper}		&	\staff{\PoolAScorekeeper(1)}	&	\staff{\PoolAScorekeeper(2)}	&	\staff{\PoolAScorekeeper(3)}	&	\emptyinvertedcell				&	\staff{\PoolBScorekeeper(1)}	&	\staff{\PoolBScorekeeper(2)}	&	\staff{\PoolBScorekeeper(3)} 	\tabularnewline
             }{}
             \ifbool{ShowBuzzerAssignments}{
-                \buzzer{Buzzer System}	&	\buzzer{\PoolABuzzer(1)}		&	\buzzer{\PoolABuzzer(2)}		&	\buzzer{\PoolABuzzer(3)}			&	\emptyinvertedcell				&	\buzzer{\PoolBBuzzer(1)}		&	\buzzer{\PoolBBuzzer(2)}		&	\buzzer{\PoolBBuzzer(3)}	& \buzzer{\PoolBBuzzer(4)}		\tabularnewline
+                \buzzer{Buzzer System}	&	\buzzer{\PoolABuzzer(1)}		&	\buzzer{\PoolABuzzer(2)}		&	\buzzer{\PoolABuzzer(3)}			&	\emptyinvertedcell				&	\buzzer{\PoolBBuzzer(1)}		&	\buzzer{\PoolBBuzzer(2)}		&	\buzzer{\PoolBBuzzer(3)}			\tabularnewline
             }{}
             \hline
-            \round{\Round(1)}		&	\matchup{\Seed(16)}{\Seed(17)}	&	\matchup{\Seed(08)}{\Seed(25)}	&	\matchup{\Seed(09)}{\Seed(24)}		&	\bye{\Seed(01) \\ \Seed(02)}	&	\matchup{\Seed(15)}{\Seed(18)}	&	\matchup{\Seed(07)}{\Seed(26)}	&	\matchup{\Seed(10)}{\Seed(23)}		&   \matchup{a}\tabularnewline
-            \round{\Round(2)}		&	\matchup{\Seed(25)}{\Seed(09)}	&	\matchup{\Seed(24)}{\Seed(16)}	&	\matchup{\Seed(01)}{\Seed(17)}		&	\bye{\Seed(08) \\ \Seed(07)}	&	\matchup{\Seed(26)}{\Seed(10)}	&	\matchup{\Seed(23)}{\Seed(15)}	&	\matchup{\Seed(02)}{\Seed(18)}		&   \matchup{a}\tabularnewline
-            \round{\Round(3)}		&	\matchup{\Seed(01)}{\Seed(24)}	&	\matchup{\Seed(25)}{\Seed(17)}	&	\matchup{\Seed(08)}{\Seed(09)}		&	\bye{\Seed(16) \\ \Seed(15)}	&	\matchup{\Seed(02)}{\Seed(23)}	&	\matchup{\Seed(26)}{\Seed(18)}	&	\matchup{\Seed(07)}{\Seed(10)}		&   \matchup{a}\tabularnewline
-            \round{\Round(4)}		&	\matchup{\Seed(16)}{\Seed(01)}	&	\matchup{\Seed(17)}{\Seed(09)}	&	\matchup{\Seed(24)}{\Seed(08)}		&	\bye{\Seed(25) \\ \Seed(26)}	&	\matchup{\Seed(15)}{\Seed(02)}	&	\matchup{\Seed(18)}{\Seed(10)}	&	\matchup{\Seed(23)}{\Seed(07)}		&   \matchup{a}\tabularnewline
-            \round{\Round(5)}		&	\matchup{\Seed(17)}{\Seed(08)}	&	\matchup{\Seed(09)}{\Seed(16)}	&	\matchup{\Seed(25)}{\Seed(01)}		&	\bye{\Seed(24) \\ \Seed(23)}	&	\matchup{\Seed(18)}{\Seed(07)}	&	\matchup{\Seed(10)}{\Seed(15)}	&	\matchup{\Seed(26)}{\Seed(02)}		&   \matchup{a}\tabularnewline
-            \round{\Round(6)}		&	\matchup{\Seed(08)}{\Seed(16)}	&	\matchup{\Seed(09)}{\Seed(01)}	&	\matchup{\Seed(24)}{\Seed(25)}		&	\bye{\Seed(17) \\ \Seed(18)}	&	\matchup{\Seed(07)}{\Seed(15)}	&	\matchup{\Seed(10)}{\Seed(02)}	&	\matchup{\Seed(23)}{\Seed(26)}		&   \matchup{a}\tabularnewline
-            \round{\Round(7)}		&	\matchup{\Seed(17)}{\Seed(24)}	&	\matchup{\Seed(01)}{\Seed(08)}	&	\matchup{\Seed(16)}{\Seed(25)}		&	\bye{\Seed(09) \\ \Seed(10)}	&	\matchup{\Seed(18)}{\Seed(23)}	&	\matchup{\Seed(02)}{\Seed(07)}	&	\matchup{\Seed(15)}{\Seed(26)}		&   \matchup{a}\tabularnewline
-            \round{\Round(8)}       &	\matchup{Team A-1}{Team B-2}	&	\matchup{Team A-2}{Team B-1}	&	\matchup{Team A-3}{Team B-4}		&	\bye{Team A-7 \\ Team B-7}	&	\matchup{Team A-4}{Team B-3}	&	\matchup{Team A-5}{Team B-6}	&	\matchup{Team A-6}{Team B-5}            &   \matchup{a}\tabularnewline
-            \round{\Round(9)}       &	\matchup{Team A-1}{Team B-1}	&	\matchup{Team A-2}{Team B-2}	&	\matchup{Team A-3}{Team B-3}		&	\bye{Bye round}	&	\matchup{Team A-4}{Team B-4}	&	\matchup{Team A-5}{Team B-5}	&	\matchup{Team A-6}{Team B-6}                        &   \matchup{a}\tabularnewline
+            \round{\Round(1)}		&	\matchup{\Seed(16)}{\Seed(17)}	&	\matchup{\Seed(08)}{\Seed(25)}	&	\matchup{\Seed(09)}{\Seed(24)}		&	\bye{\Seed(01) \\ \Seed(02)}	&	\matchup{\Seed(15)}{\Seed(18)}	&	\matchup{\Seed(07)}{\Seed(26)}	&	\matchup{\Seed(10)}{\Seed(23)}		\tabularnewline
+            \round{\Round(2)}		&	\matchup{\Seed(25)}{\Seed(09)}	&	\matchup{\Seed(24)}{\Seed(16)}	&	\matchup{\Seed(01)}{\Seed(17)}		&	\bye{\Seed(08) \\ \Seed(07)}	&	\matchup{\Seed(26)}{\Seed(10)}	&	\matchup{\Seed(23)}{\Seed(15)}	&	\matchup{\Seed(02)}{\Seed(18)}		\tabularnewline
+            \round{\Round(3)}		&	\matchup{\Seed(01)}{\Seed(24)}	&	\matchup{\Seed(25)}{\Seed(17)}	&	\matchup{\Seed(08)}{\Seed(09)}		&	\bye{\Seed(16) \\ \Seed(15)}	&	\matchup{\Seed(02)}{\Seed(23)}	&	\matchup{\Seed(26)}{\Seed(18)}	&	\matchup{\Seed(07)}{\Seed(10)}		\tabularnewline
+            \round{\Round(4)}		&	\matchup{\Seed(16)}{\Seed(01)}	&	\matchup{\Seed(17)}{\Seed(09)}	&	\matchup{\Seed(24)}{\Seed(08)}		&	\bye{\Seed(25) \\ \Seed(26)}	&	\matchup{\Seed(15)}{\Seed(02)}	&	\matchup{\Seed(18)}{\Seed(10)}	&	\matchup{\Seed(23)}{\Seed(07)}		\tabularnewline
+            \round{\Round(5)}		&	\matchup{\Seed(17)}{\Seed(08)}	&	\matchup{\Seed(09)}{\Seed(16)}	&	\matchup{\Seed(25)}{\Seed(01)}		&	\bye{\Seed(24) \\ \Seed(23)}	&	\matchup{\Seed(18)}{\Seed(07)}	&	\matchup{\Seed(10)}{\Seed(15)}	&	\matchup{\Seed(26)}{\Seed(02)}		\tabularnewline
+            \round{\Round(6)}		&	\matchup{\Seed(08)}{\Seed(16)}	&	\matchup{\Seed(09)}{\Seed(01)}	&	\matchup{\Seed(24)}{\Seed(25)}		&	\bye{\Seed(17) \\ \Seed(18)}	&	\matchup{\Seed(07)}{\Seed(15)}	&	\matchup{\Seed(10)}{\Seed(02)}	&	\matchup{\Seed(23)}{\Seed(26)}		\tabularnewline
+            \round{\Round(7)}		&	\matchup{\Seed(17)}{\Seed(24)}	&	\matchup{\Seed(01)}{\Seed(08)}	&	\matchup{\Seed(16)}{\Seed(25)}		&	\bye{\Seed(09) \\ \Seed(10)}	&	\matchup{\Seed(18)}{\Seed(23)}	&	\matchup{\Seed(02)}{\Seed(07)}	&	\matchup{\Seed(15)}{\Seed(26)}		\tabularnewline
+            \round{\Round(8)}       &	\matchup{Team A-1}{Team B-2}	&	\matchup{Team A-2}{Team B-1}	&	\matchup{Team A-3}{Team B-4}		&	\bye{Team A-7 \\ Team B-7}	&	\matchup{Team A-4}{Team B-3}	&	\matchup{Team A-5}{Team B-6}	&	\matchup{Team A-6}{Team B-5}            \tabularnewline
+            \round{\Round(9)}       &	\matchup{Team A-1}{Team B-1}	&	\matchup{Team A-2}{Team B-2}	&	\matchup{Team A-3}{Team B-3}		&	\bye{Bye round}	&	\matchup{Team A-4}{Team B-4}	&	\matchup{Team A-5}{Team B-5}	&	\matchup{Team A-6}{Team B-6}                        \tabularnewline
             \hline
         \end{tabular}
 
